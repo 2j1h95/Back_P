@@ -1,0 +1,26 @@
+{
+  "name": "timemanager_back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "timemanager.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mainvoid95/timemanager_back.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mainvoid95/timemanager_back/issues"
+  },
+  "homepage": "https://github.com/mainvoid95/timemanager_back#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "mongoose": "^5.8.11"
+  }
+}
