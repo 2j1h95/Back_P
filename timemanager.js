@@ -10,8 +10,6 @@ let port = process.env.PORT || 80;
 
 let router = require('./routes')(app)
 
-let mongoose  = require('mongoose');
-
 let db = mongoose.connection;
 db.on('error', console.error);
 db.once('open', function(){
