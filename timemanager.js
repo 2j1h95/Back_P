@@ -6,7 +6,7 @@ let mongoose    = require('mongoose');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-let port = process.env.PORT || 80;
+let port = process.env.PORT || 8080;
 
 let router = require('./routes')(app)
 
