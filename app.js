@@ -10,10 +10,11 @@ let port = process.env.PORT || 8080;
 
 let router = require('./routes')(app)
 
+//몽고디비 서버 연결 부분
 let db = mongoose.connection;
 db.on('error', console.error);
 db.once('open', function(){
-    console.log("Connected to mongod server");
+    console.log("몽고디비 서버 연결 확인");
 });
 
 mongoose.connect('mongodb://mytoday.ml/timemanager');
