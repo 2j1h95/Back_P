@@ -10,7 +10,7 @@ module.exports = function(app, User)
         user.email = req.body.email;
         user.pass = req.body.pass;
 
-        book.save(function(err){
+        user.save(function(err){
             if(err){
                 console.error(err);
                 res.json({result: 0});
