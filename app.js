@@ -8,8 +8,6 @@ app.use(bodyParser.json());
 
 let port = process.env.PORT || 8080;
 
-let router = require('./routes')(app)
-
 //몽고디비 서버 연결 부분
 let db = mongoose.connection;
 db.on('error', console.error);
@@ -18,6 +16,10 @@ db.once('open', function(){
 });
 
 mongoose.connect('mongodb://mytoday.ml/timemanager');
+
+let User = require('./db/Userdb');
+
+let router = require('./routes')(app, User)
 
 
 let server = app.listen(port, function(){
